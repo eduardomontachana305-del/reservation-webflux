@@ -31,4 +31,14 @@ public final class ReservationEvent {
     public List<String> getEmails() {
         return List.copyOf(emails);
     }
+
+    @Override
+    public String toString() {
+        return "ReservationEvent{" +
+                "id='" + id + '\'' +
+                ", passengerName='" + passengerName + '\'' +
+                ", price=" + price +
+                ", emails=" + emails +
+                '}';
+    }
 }
